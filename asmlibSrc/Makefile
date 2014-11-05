@@ -2,7 +2,7 @@ AR = ar
 RANLIB = ranlib
 
 .asm.o64:
-	yasm -felf64 -DUNIX -Werror -o $*.o64 $<
+	yasm -felf64 -DUNIX -o $*.o64 $<
 
 .SUFFIXES: .asm .o64
 
